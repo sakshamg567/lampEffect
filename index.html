@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Lamp Effect</title>
+   <link rel="stylesheet" href="lamp.css">
+
+</head>
+<body>
+   <div class="lamp-container">
+      <div class="lamp-inner">
+         <div class="light-beam"></div>
+            <div class="gradient-conic gradient-left">
+               <div class="gradient-mask bottom-mask"></div>
+               <div class="gradient-mask side-mask"></div>
+            </div>
+            <div class="gradient-conic gradient-right">
+               <div class="gradient-mask bottom-mask right-mask"></div>
+               <div class="gradient-mask side-mask right-mask" style="mask-image: linear-gradient(to left, white, transparent);"></div>
+            </div>
+            <div class="blur-effect"></div>
+            <div class="center-glow"></div>
+         </div>
+      </div>
+      <input type="color" name="" id="color-selector" value="#60dfff">
+   </div>
+   <script src="lamp.js"></script>
+</body>
+</html>
